@@ -94,7 +94,7 @@ public class QuarterlySalesStatistics {
         int divNum1=0, divNum2=0, divNum3=0, divNum4=0; //Division number
                                                         //for quarterly high
                                                         
-        //Set 
+        //Set division high per quarter
         for (int high = 0; high < sales.length; high++) {
             for (int x = 0; x < sales[0].length; x++) {
                 if (x > 0 && (sales[high][x] > sales[high - 1][x - 1])) {
@@ -119,6 +119,7 @@ public class QuarterlySalesStatistics {
                 }
             }
             
+            //Print out highest divisions per quarter
             System.out.println("Q1 \t Divsion " + divNum1);
             System.out.println("Q2 \t Divsion " + divNum2);
             System.out.println("Q3 \t Division " + divNum3);
